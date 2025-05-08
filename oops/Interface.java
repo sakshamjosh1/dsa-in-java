@@ -1,5 +1,3 @@
-import java.io.*;
-
 interface vehicle{
     //Abstract method defined
     void changeGear(int a);
