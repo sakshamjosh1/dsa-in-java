@@ -1,28 +1,40 @@
-import java.util.Scanner;
+import java.util.*;
+
 public class Inputs {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        int[] arr = new int[5];
-        arr[0] = 23;
-        arr[1] = 45;
-        arr[2] = 42;
-        arr[3] = 65;
-        arr[4] = 21;
-        System.out.println(arr[3]);
+        // int[] arr = new int[5];
+        // arr[0] = 23;
+        // arr[1] = 45;
+        // arr[2] = 42;
+        // arr[3] = 65;
+        // arr[4] = 21;
+        // System.out.println(arr[3]);
 
-        //Input using for loops
-        for (int i=0; i<arr.length; i++){
-            arr[i] = input.nextInt();
+        // //Input using for loops
+        // for (int i=0; i<arr.length; i++){
+        //     arr[i] = input.nextInt();
+        // }
+
+        // //Print the array
+        // for (int i=0; i<arr.length; i++){
+        //     System.out.print(arr[i]+" ");
+        // }
+
+        // //Enhanced for loop
+        // for(int num : arr){
+        //     System.out.println(num+" ");
+        // }
+
+        //Array of Objects
+        String str[] = new String[4];
+        for(int i=0; i< str.length; i++){
+            str[i] = input.next();
         }
 
-        //Print the array
-        for (int i=0; i<arr.length; i++){
-            System.out.print(arr[i]+" ");
-        }
+        //Modifying
+        str[1] = "saksham";
 
-        //Enhanced for loop
-        for(int num : arr){
-            System.out.println(num+" ");
-        }
+        System.out.println(Arrays.toString(str));
     }
 }
